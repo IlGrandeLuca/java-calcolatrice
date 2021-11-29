@@ -86,11 +86,10 @@ public class CalcoliHelper {
 		}
 	}
 
-	public static int exponentation(int number, int exponent) {
-		int res = 1;
-		for (int i = 0; i < exponent; i++) {
-			res *= number;
-		}
-		return res;
-	}
+	public static int CalculatePower (int num, int exponent){
+        if (exponent == 0)
+            return 1;
+        else
+            return num * CalculatePower(num, exponent - 1);
+    }
 }
