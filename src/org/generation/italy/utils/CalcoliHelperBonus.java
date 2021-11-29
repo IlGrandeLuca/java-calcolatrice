@@ -1,7 +1,11 @@
 package org.generation.italy.utils;
 
 public class CalcoliHelperBonus {
-	
+
+	private CalcoliHelperBonus() {
+
+	}
+
 	public static double calculatePower(double num, int exponent) {
 		double res = 1;
 		if (num > 0 && exponent == 0) {

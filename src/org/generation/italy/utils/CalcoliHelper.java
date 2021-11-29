@@ -86,10 +86,10 @@ public class CalcoliHelper {
 		}
 	}
 
-	public static int CalculatePower (int num, int exponent){
+	public static int calculatePower (int num, int exponent){
         if (exponent == 0)
             return 1;
         else
-            return num * CalculatePower(num, exponent - 1);
+            return num * calculatePower(num, exponent - 1);
     }
 }
